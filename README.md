@@ -19,9 +19,6 @@
 With the rise of AI and targeted marketing, banks are prioritising behaviour-driven analytics to improve product performance, strengthen customer engagement, and optimise credit decisions. Understanding how customers spend, repay, and use their credit facilities is essential for designing relevant savings products, personal loans, and wealth management offers. Retail banks such as FNB and ABSA, as well as major credit lenders, rely on this intelligence to run high-performing product and marketing campaigns. Industry research shows that behaviour-based segmentation can increase campaign conversion by **20–30%** and reduce early-stage delinquency by **10–15%**, making it a key driver of business value.
 # 🏦 Banking Customer Behaviour Segmentation Engine
 
-
----
-
 ## 🧠 Project Overview
 
 Banks rely heavily on behavioural analytics to improve product performance, credit strategies, and targeted marketing. With increasing competition from digital banks and fintechs, understanding customer activity—how they spend, repay, and use credit—is essential for portfolio growth.
@@ -34,7 +31,6 @@ This project delivers an end-to-end segmentation engine that enables:
 - 💼 Streamlit app for business-ready deployment  
 - 📈 Insights for marketing, credit risk, and product decisioning  
 
----
 
 ## 🎯 Key Objectives
 
