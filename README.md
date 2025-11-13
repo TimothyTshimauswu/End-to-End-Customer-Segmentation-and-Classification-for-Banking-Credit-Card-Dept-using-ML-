@@ -21,3 +21,15 @@ Retail banks and credit-card providers collect large volumes of behavioural data
 This project addresses that challenge by building a machine learning–driven segmentation engine that groups customers based on their spending activity, repayment habits, credit utilisation, and transaction behaviour. These segments can support various banking functions, including targeted marketing, product personalisation, credit limit strategies, and early identification of risky behavioural patterns.
 
 The project also includes a classification model to score new or incoming customers, ensuring consistent, scalable segmentation beyond the initial dataset. By deploying the model through a Streamlit application, the solution becomes accessible to business teams, enabling faster insights and more data-driven decisions within retail banking and financial services environments.
+
+## Dataset Structure and Description
+
+The dataset contains behavioural and transactional features for over 8,000 credit-card customers. It includes information on spending patterns, repayment behaviour, credit utilisation, and account activity. Key variables include:
+
+- **Balance and credit limit**  
+- **One-off and installment purchases**  
+- **Cash advances and transaction counts**  
+- **Payment amounts and minimum payments**  
+- **Full payment behaviour and tenure**
+
+These features represent the core behavioural signals used by banks to understand customer usage, assess credit needs, and segment their retail portfolios.
