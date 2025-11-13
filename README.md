@@ -16,11 +16,19 @@
 
 ## Project Background
 
-Retail banks and credit-card providers collect large volumes of behavioural data describing how customers spend, repay, and interact with financial products. Understanding these patterns is essential for improving customer value, managing portfolio risk, and designing personalised products. Traditional rule-based segmentation often fails to capture the complexity of real customer behaviour, leading to generic offers, inefficient credit decisions, and missed growth opportunities.
+With the rise of AI and targeted marketing, banks are prioritising behaviour-driven analytics to improve product performance, strengthen customer engagement, and optimise credit decisions. Understanding how customers spend, repay, and use their credit facilities is essential for designing relevant savings products, personal loans, and wealth management offers. Retail banks such as FNB and ABSA, as well as major credit lenders, rely on this intelligence to run high-performing product and marketing campaigns. Industry research shows that behaviour-based segmentation can increase campaign conversion by **20–30%** and reduce early-stage delinquency by **10–15%**, making it a key driver of business value.
 
-This project addresses that challenge by building a machine learning–driven segmentation engine that groups customers based on their spending activity, repayment habits, credit utilisation, and transaction behaviour. These segments can support various banking functions, including targeted marketing, product personalisation, credit limit strategies, and early identification of risky behavioural patterns.
+### Objective  
+To build a machine learning–driven customer segmentation engine and classification model that groups customers by behavioural patterns and scores new customers in real time.
 
-The project also includes a classification model to score new or incoming customers, ensuring consistent, scalable segmentation beyond the initial dataset. By deploying the model through a Streamlit application, the solution becomes accessible to business teams, enabling faster insights and more data-driven decisions within retail banking and financial services environments.
+### Business Value  
+This solution enables:  
+- More accurate **targeted marketing** and personalised product recommendations  
+- Improved **portfolio profitability** through better customer insights  
+- Stronger **credit-risk monitoring** using behavioural indicators  
+- Faster, scalable **decision support** through automated segmentation and a Streamlit app  
+
+This directly supports analytics, CRM, credit risk, and product teams across retail banking and lending. ```
 
 ## Dataset Structure and Description
 
