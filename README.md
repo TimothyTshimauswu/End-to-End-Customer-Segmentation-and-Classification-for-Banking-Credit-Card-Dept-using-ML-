@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/project_banner.png" width="100%" alt="Banking Customer Behaviour Segmentation Engine for Better Products Marketing Banner">
+  <img src="assets/project_banner.png" width="100%" alt=" Banking Customer Behaviour Segmentation Engine for Better Products Marketing Banner">
 </p>
 
 <h1 align="center">🏦Banking Customer Behaviour Segmentation Engine for Better Products Marketing</h1>
@@ -9,26 +9,32 @@
 </h3>
 
 <p align="center">
-  An end-to-end machine learning system for analysing credit-card customer behaviour,
-  segmenting users, and classifying new customers for banking and financial services.
+A full-stack behavioural analytics system I built to segment banking customers by spending patterns, income levels, and financial behaviour. The goal is to support targeted product design, improve marketing accuracy, and increase engagement and conversion.
 </p>
 
+A full-stack behavioural analytics system I built to segment banking customers by spending patterns, income levels, and financial behaviour. The goal is to support targeted product design, improve marketing accuracy, and increase engagement and conversion.
 
-## Project Background
+## Executive Summary
 
-With the rise of AI and targeted marketing, banks are prioritising behaviour-driven analytics to improve product performance, strengthen customer engagement, and optimise credit decisions. Understanding how customers spend, repay, and use their credit facilities is essential for designing relevant savings products, personal loans, and wealth management offers. Retail banks such as FNB and ABSA, as well as major credit lenders, rely on this intelligence to run high-performing product and marketing campaigns. Industry research shows that behaviour-based segmentation can increase campaign conversion by **20–30%** and reduce early-stage delinquency by **10–15%**, making it a key driver of business value.
+This project started with my own experience as a South African banking customer. Standard Bank and Capitec frequently contacted me with product offers. Some matched my spending habits and income band. Others felt unrelated to my lifestyle. I wanted to understand how banks decide who receives credit cards, lifestyle bundles, investment products, or rewards programmes, and why some offers align while others do not.
 
-## 🧠 Project Overview
+I built a segmentation engine using engineered behavioural features, PCA, K-Means, and a Decision Tree to group customers into meaningful clusters. These clusters help banks target products more accurately, increase engagement, and reduce wasted marketing spend. I deployed a Streamlit interface so marketing, product, and BI teams can explore segments and identify high-value groups.
 
-Banks rely heavily on behavioural analytics to improve product performance, credit strategies, and targeted marketing. With increasing competition from digital banks and fintechs, understanding customer activity—how they spend, repay, and use credit—is essential for portfolio growth.
+## Business Problem
 
-This project delivers an end-to-end segmentation engine that enables:
+Banks face four common challenges.
 
-- 🔍 Behavioural clustering of credit-card customers  
-- 📊 PCA-powered dimensionality reduction  
-- 🧠 Classification model for real-time customer scoring  
-- 💼 Streamlit app for business-ready deployment  
-- 📈 Insights for marketing, credit risk, and product decisioning  
+1. Low engagement from poorly targeted product offers.  
+2. Marketing spend wasted on customers unlikely to convert.  
+3. Limited insight into behaviour-driven product fit.  
+4. Difficulty identifying cross-sell and up-sell opportunities.
+
+This project answers:
+
+- How customers differ in spending, income, and repayment behaviour.  
+- Which behaviour patterns predict high or low engagement?  
+- How segmentation improves targeting and campaign efficiency.  
+- Which groups align with wealth, credit, lifestyle, or savings products?
 
 
 ## 🎯 Key Objectives
@@ -57,49 +63,62 @@ This project delivers an end-to-end segmentation engine that enables:
 | `assets/` | Visuals and project banner |
 
 ---
+## Technical Overview
 
-## 🧹 Data Preprocessing
+### 1. Data Engineering
 
-- Imputed missing values in Credit_Limit and Minimum_Payments  
-- Standardized all numerical features using StandardScaler  
-- Removed Customer_ID and non-predictive fields  
-- Engineered transaction frequency and utilisation features  
-- Applied PCA to reduce multicollinearity across behavioural variables  
+I engineered features such as:
 
----
+- Income bands  
+- Spending categories  
+- Transaction frequency  
+- Credit utilisation  
+- Repayment behaviour  
+- Lifestyle and activity indicators  
 
-## 📈 Exploratory Data Analysis
+### 2. Feature Reduction and Clustering
 
-- 📊 Distribution analysis for spending, payments, and balances  
-- 🔥 Correlation heatmap to identify behavioural relationships  
-- 🧭 Frequency vs. spending behaviour patterns  
-- 💳 Cash advance trends and repayment behaviour  
-- 🏷️ Identification of outlier customer groups  
+I used PCA for dimensionality reduction and K-Means to create stable, interpretable segments.
 
----
+The clusters show:
 
-## 🤖 Modelling Approach
+- Clear separation across behaviour groups  
+- Low intra-cluster variance  
+- High inter-cluster separation  
 
-### **Unsupervised Learning – K-Means Clustering**  
-- Optimal K selected using the elbow method  
-- Five behavioural segments identified  
-- PCA plots used to visualize cluster separation
-- 
 <p align="center">
   <img src="assets/PCA Plot.png" width="750"><br>
   <em>PCA projection showing separation between customer behaviour groups</em>
 </p>
 
-### **Supervised Learning – Decision Tree Classifier**  
+
+### 3. Segment Interpretation
+
+I trained a Decision Tree to create simple rules that explain each segment. This helps business teams understand why customers fall into specific groups.
+**Supervised Learning – Decision Tree Classifier**  
 - Target: Cluster label assigned by K-Means  
 - Train-test split: 70/30  
 - Accuracy: ~92%  
 - Metrics: Classification Report + Confusion Matrix  
 
----
+### 4. Insights and Marketing Analytics
 
-## 🟢 Streamlit App Overview
+I built analytics summarising:
 
+- Engagement potential  
+- Spending and lifestyle patterns  
+- Income and credit behaviour  
+- Ideal product alignment per segment  
+
+### 5. Deployment
+
+I deployed a Streamlit interface that allows teams to explore segments, review customer behaviour summaries, and download insight reports.
+- Models serialized with `joblib` and `pickle.`  
+- Streamlit app runs locally or through Streamlit Cloud  
+- PCA, scaler, and clustering pipelines integrated end-to-end  
+- CSV batch scoring supported for business workflows  
+
+🟢 Streamlit App Overview
 The Streamlit application enables:
 
 - 🧍 **Single-customer scoring**  
@@ -114,53 +133,44 @@ The Streamlit application enables:
 This mirrors operational tools used by CRM, product, and credit teams in modern banks.
 
 ---
+## Skills Demonstrated
 
-## 🚀 Deployment
+Python  
+Feature Engineering  
+PCA  
+K-Means  
+Decision Trees  
+Customer Analytics  
+Streamlit  
+Power BI  
 
-- Models serialized with `joblib` and `pickle`  
-- Streamlit app runs locally or through Streamlit Cloud  
-- PCA, scaler, and clustering pipelines integrated end-to-end  
-- CSV batch scoring supported for business workflows  
+## Results and Business Impact
 
----
+This system improves marketing accuracy and operational efficiency.
 
-## 🧠 Business Impact
+1. Behaviour-aligned segmentation increases product relevance.  
+2. Targeted campaigns deliver higher engagement.  
+3. Marketing waste is reduced.  
+4. Campaign planning becomes faster.  
+5. Product and retention strategies improve through behavioural insight.
 
-This solution enables banking teams to:
+## How Teams Use This System
 
-- Identify high-value vs. low-engagement customers  
-- Improve product targeting and personalised recommendations  
-- Strengthen credit risk monitoring via behavioural indicators  
-- Enhance portfolio profitability with segmentation insights  
-- Automate customer profiling across marketing and credit teams  
+- Marketing teams use segments for targeted campaigns.  
+- Product teams match offerings to the most relevant groups.  
+- BI teams explore behaviour patterns across the customer base.  
+- Management reviews segment-level revenue and engagement potential.
 
-Industry benchmarks show behaviour-driven segmentation can:
+## Recommendations
 
-- Increase targeted campaign conversions by **20–30%**  
-- Reduce early-stage delinquency by **10–15%**  
-- Improve product uptake through personalised engagement  
+1. Integrate segmentation into the CRM platform.  
+2. Build personalised marketing journeys based on segment rules.  
+3. Expand features using credit-bureau and richer transactional data.  
+4. Add uplift modelling for predicted campaign response.
 
-This aligns directly with KPI-driven roles in analytics, CRM, and retail banking strategy.
+## Next Steps
 
----
-
-## 🛠️ Tech Stack
-
-- **Python:** Pandas, NumPy, Scikit-Learn  
-- **Visualisation:** Matplotlib, Seaborn  
-- **Dimensionality Reduction:** PCA  
-- **Clustering:** K-Means  
-- **Classification:** DecisionTreeClassifier  
-- **Deployment:** Streamlit, pickle, joblib  
-
----
-
-## 📌 Future Enhancements
-
-- Add SHAP/LIME for behavioural explainability  
-- Integrate real-time transactional feeds  
-- Expand segmentation using HDBSCAN or GMM  
-- Add customer lifetime value (CLV) scoring  
-- Build a Power BI dashboard for business teams  
-
----
+1. Automate retraining using fresh behavioural data.  
+2. Add drift monitoring for stability.  
+3. Support multi-product segmentation.  
+4. Deploy the engine on AWS for scale.
