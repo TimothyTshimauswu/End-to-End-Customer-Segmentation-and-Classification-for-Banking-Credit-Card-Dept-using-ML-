@@ -83,7 +83,12 @@ This project delivers an end-to-end segmentation engine that enables:
 ### **Unsupervised Learning – K-Means Clustering**  
 - Optimal K selected using the elbow method  
 - Five behavioural segments identified  
-- PCA plots used to visualize cluster separation  
+- PCA plots used to visualize cluster separation
+- 
+<p align="center">
+  <img src="assets/PCA Plot.png" width="750"><br>
+  <em>PCA projection showing separation between customer behaviour groups</em>
+</p>
 
 ### **Supervised Learning – Decision Tree Classifier**  
 - Target: Cluster label assigned by K-Means  
@@ -101,7 +106,11 @@ The Streamlit application enables:
 - 📤 **CSV upload for batch scoring**  
 - 📈 **Real-time behavioural classification**  
 - ✔️ **Prediction outputs for business users**
-
+  
+<p align="center">
+  <img src="assets/streamlit_snapshot.png" width="750"><br>
+  <em>Streamlit interface used by Banking Product and Marketing teams to segment a new customer and identify the best product fit</em>
+</p>
 This mirrors operational tools used by CRM, product, and credit teams in modern banks.
 
 ---
