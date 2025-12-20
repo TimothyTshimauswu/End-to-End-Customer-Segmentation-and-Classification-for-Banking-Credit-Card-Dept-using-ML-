@@ -2,7 +2,7 @@
   <img src="assets/Project_banner.png" width="100%" alt=" Banking Customer Behaviour Segmentation Engine for Better Products Marketing Banner"> 
 </p>
 
-<h1 align="center">🏦Banking Customer Behaviour Segmentation Engine for Better Products Marketing</h1>
+<h1 align="center">Banking Customer Behaviour Segmentation Engine for Better Products Marketing</h1>
 
 <h3 align="center">
   PCA • K-Means Clustering • Decision Tree Classification • Streamlit Deployment
@@ -35,7 +35,7 @@ This project answers:
 - Which groups align with wealth, credit, lifestyle, or savings products?
 
 
-## 🎯 Key Objectives
+## Key Objectives
 
 - Preprocess and scale customer behavioural data  
 - Build PCA components for more interpretable features  
@@ -46,7 +46,7 @@ This project answers:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 | File / Folder | Description |
 |---------------|-------------|
@@ -116,13 +116,13 @@ I deployed a Streamlit interface that allows teams to explore segments, review c
 - PCA, scaler, and clustering pipelines integrated end-to-end  
 - CSV batch scoring supported for business workflows  
 
-🟢 Streamlit App Overview
+Streamlit App Overview
 The Streamlit application enables:
 
-- 🧍 **Single-customer scoring**  
-- 📤 **CSV upload for batch scoring**  
-- 📈 **Real-time behavioural classification**  
-- ✔️ **Prediction outputs for business users**
+- **Single-customer scoring**  
+- **CSV upload for batch scoring**  
+- **Real-time behavioural classification**  
+- **Prediction outputs for business users**
   
 <p align="center">
   <img src="assets/streamlit_snapshot.png" width="750"><br>
