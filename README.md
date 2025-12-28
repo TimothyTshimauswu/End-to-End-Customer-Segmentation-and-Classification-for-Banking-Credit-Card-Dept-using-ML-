@@ -1,17 +1,29 @@
-<p align="center">
-  <img src="assets/Project_banner.png" width="100%" alt=" Banking Customer Behaviour Segmentation Engine for Better Products Marketing Banner"> 
-</p>
+# Banking Customer Behaviour Segmentation Engine
 
-<h1 align="center">Banking Customer Behaviour Segmentation Engine for Better Products Marketing</h1>
+<div align="center">
 
-<h3 align="center">
-  PCA • K-Means Clustering • Decision Tree Classification • Streamlit Deployment
-</h3>
+![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-Database-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![PCA](https://img.shields.io/badge/PCA-Dimensionality%20Reduction-FF6600?style=for-the-badge)
+![K-Means](https://img.shields.io/badge/K--Means-Clustering-FF8C00?style=for-the-badge)
+![Decision Trees](https://img.shields.io/badge/Decision-Trees-2ea44f?style=for-the-badge)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 
-<p align="center">
+![GitHub stars](https://img.shields.io/github/stars/TimothyTshimauswu/Banking-Customer-Behaviour-Segmentation-Engine-for-Better-Products-Marketing?style=social)
+![GitHub forks](https://img.shields.io/github/forks/TimothyTshimauswu/Banking-Customer-Behaviour-Segmentation-Engine-for-Better-Products-Marketing?style=social)
+
+**ML-Powered Behavioral Clustering Achieving 92% Prediction Accuracy on 250,000+ Banking Customers**
+
+[![View Repository](https://img.shields.io/badge/View-Repository-181717?style=for-the-badge&logo=github)](https://github.com/TimothyTshimauswu/Banking-Customer-Behaviour-Segmentation-Engine-for-Better-Products-Marketing)
+[![Read Documentation](https://img.shields.io/badge/Read-Documentation-blue?style=for-the-badge)](https://github.com/TimothyTshimauswu/Banking-Customer-Behaviour-Segmentation-Engine-for-Better-Products-Marketing#readme)
+
+</div>
 A full-stack behavioural analytics system I built to segment banking customers by spending patterns, income levels, and financial behaviour. The goal is to support targeted product design, improve marketing accuracy, and increase engagement and conversion.
 </p>
 
+![Banking Customer Segmentation Banner](assets/banking_segmentation_banner.png)
 ## Executive Summary
 
 This project started with my own experience as a South African banking customer. Standard Bank and Capitec frequently contacted me with product offers. Some matched my spending habits and income band. Others felt unrelated to my lifestyle. I wanted to understand how banks decide who receives credit cards, lifestyle bundles, investment products, or rewards programmes, and why some offers align while others do not.
